@@ -1,10 +1,11 @@
 #CNN
 
+
 #PART 1 - Building the CNN
 #Importing the libraries
-import tensorflow.keras
+import keras
 from keras.models import Sequential
-from keras.layers import Convolution2D
+from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras.layers import Flatten
 from keras.layers import Dense
@@ -12,7 +13,9 @@ from keras.layers import Dense
 
 #Initialisation and creating the CNN
 classifier = Sequential()
-classifier.add(Convolution2D(32, 3, 3, input_shape=(64, 64, 3), activation='relu'))
+classifier.add(Conv2D(32, (3, 3), input_shape=(64, 64, 3), activation='relu'))
+classifier.add(MaxPooling2D(pool_size=(2, 2)))
+classifier.add(Conv2D(32, (3, 3), activation='relu'))
 classifier.add(MaxPooling2D(pool_size=(2, 2)))
 classifier.add(Flatten())
 classifier.add(Dense(128, activation='relu'))
@@ -48,11 +51,22 @@ test_set = test_datagen.flow_from_directory(
 classifier.fit_generator(
                         training_set,
                         steps_per_epoch=8000,
-                        epochs=25,
+                        epochs=10,
                         validation_data=test_set,
                         validation_steps=2000
 )
 
+#Saving our training model
+#Generate the description of the model in json format
+model_json = classifier.to_json()
+
+#Write the model to the file
+json_file = open("CNN.json", "w")
+json_file.write(model_json)
+json_file.close()
+
+#Write weights to the file
+classifier.save_weights("CNN.h5")
 
 
 

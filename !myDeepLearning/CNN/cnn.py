@@ -57,15 +57,15 @@ classifier.fit_generator(
 )
 
 #Saving our training model
-#Generate the description of the model in json format
+#generate the description of the model in json format
 model_json = classifier.to_json()
 
-#Write the model to the file
+#write the model to the file
 json_file = open("CNN.json", "w")
 json_file.write(model_json)
 json_file.close()
 
-#Write weights to the file
+#write weights to the file
 classifier.save_weights("CNN.h5")
 
 

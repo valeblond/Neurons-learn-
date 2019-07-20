@@ -1,5 +1,6 @@
-#SOM
+#SOM+ANN
 
+#PART 1- FIND FRAUDS(SOM)
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -40,7 +41,35 @@ show()
 
 #Finding the frauds
 mappings = som.win_map(X)
-frauds = np.concatenate((mappings[(7, 5)], mappings[(6, 6)]), axis=0)
+frauds = mappings[(7, 5)]
+# np.concatenate((mappings[(7, 5)], mappings[(6, 6)]), axis=0)
 frauds = sc.inverse_transform(frauds)
 print(frauds)
 
+
+#PART 2 - UNSUPERVISED TO SUPERVISED(ANN)
+#Creating matrix of features
+customers = dataset.iloc[:, 1:].values
+
+#Creating the dependent variable
+is_fraud = np.zeros(len(dataset))
+for i in range(len(dataset)):
+    if dataset.iloc[i,0] in frauds:
+        is_fraud[i] = 1
+
+#Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+customers = sc.fit_transform(customers)
+
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+
+#Initialisation and creating the ANN
+classifier = Sequential()
+classifier.add(Dense(2, init='uniform', activation='relu', input_dim=15))
+classifier.add(Dense(1, init='uniform', activation='sigmoid'))
+
+classifier.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+classifier.fit(customers, is_fraud, nb_epoch=2, batch_size=1)

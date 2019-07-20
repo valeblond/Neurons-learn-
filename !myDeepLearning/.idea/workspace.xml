@@ -14,8 +14,8 @@
       <file leaf-file-name="ann.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ANN/ann.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            <state relative-caret-position="168">
+              <caret line="25" selection-start-line="25" selection-end-line="44" />
               <folding>
                 <element signature="e#61#79#0" expanded="true" />
               </folding>
@@ -68,11 +68,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="som.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="som.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SOM/som.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="318">
+              <caret line="30" column="21" lean-forward="true" selection-end-line="46" />
+              <folding>
+                <element signature="e#6#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="som_stronger.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SOM/som_stronger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#6#24#0" expanded="true" />
               </folding>
@@ -127,6 +139,7 @@
         <option value="$PROJECT_DIR$/RNN/rnn_test.py" />
         <option value="$PROJECT_DIR$/RNN/rnn.py" />
         <option value="$PROJECT_DIR$/SOM/som.py" />
+        <option value="$PROJECT_DIR$/SOM/som_stronger.py" />
       </list>
     </option>
   </component>
@@ -176,25 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.som">
-    <configuration name="cnn_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="!my" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CNN" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN/cnn_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.som_stronger">
     <configuration name="rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="!my" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,20 +262,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="som_stronger" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="!my" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SOM" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SOM/som_stronger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.cnn_test" />
       <item itemvalue="Python.rnn" />
       <item itemvalue="Python.rnn_def" />
       <item itemvalue="Python.rnn_test" />
       <item itemvalue="Python.som" />
+      <item itemvalue="Python.som_stronger" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.som_stronger" />
         <item itemvalue="Python.som" />
         <item itemvalue="Python.rnn" />
         <item itemvalue="Python.rnn_test" />
         <item itemvalue="Python.rnn_def" />
-        <item itemvalue="Python.cnn_test" />
       </list>
     </recent_temporary>
   </component>
@@ -311,21 +324,21 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22991072" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32838285" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.5148515" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.5148515" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.39273927" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32838285" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -333,13 +346,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../6sem/Task_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../badTry1/define_pic.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -588,16 +594,6 @@
     <entry file="file://$PROJECT_DIR$/RNN/ктт_еуые.py" />
     <entry file="file://$PROJECT_DIR$/RNN/rnn_def.py" />
     <entry file="file://$PROJECT_DIR$/RNN/rnn_test.py" />
-    <entry file="file://$PROJECT_DIR$/ANN/ann.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#61#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CNN/cnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1536">
@@ -627,8 +623,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SOM/som.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="318">
+          <caret line="30" column="21" lean-forward="true" selection-end-line="46" />
+          <folding>
+            <element signature="e#6#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANN/ann.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="25" selection-start-line="25" selection-end-line="44" />
+          <folding>
+            <element signature="e#61#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOM/som_stronger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#6#24#0" expanded="true" />
           </folding>

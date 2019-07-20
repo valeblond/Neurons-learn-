@@ -73,3 +73,8 @@ classifier.add(Dense(1, init='uniform', activation='sigmoid'))
 
 classifier.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 classifier.fit(customers, is_fraud, nb_epoch=2, batch_size=1)
+
+#Predicting the probabilities of frauds
+y_pred = classifier.predict(customers)
+y_pred = np.concatenate((dataset.iloc[:, 0:1].values, y_pred), axis=1)
+y_pred = y_pred[y_pred[:, 1].argsort()]
